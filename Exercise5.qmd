@@ -1,5 +1,6 @@
 ---
 title: "Exercise 5"
+author: "Maya McCain"
 format: html
 editor: visual
 ---
