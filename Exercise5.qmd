@@ -1,0 +1,81 @@
+---
+title: "Exercise 5"
+format: html
+editor: visual
+---
+# Attach the `palmerspenguins` package
+library(palmerpenguins)
+
+# 1. Examine at the dataset using the ?Help page
+?penguins
+
+# 2. what is the class of the penguins dataset?
+class(penguins)
+
+list
+
+# 3. what is the structure of the penguins dataset?
+str(penguins)
+
+tibble
+
+# 4. what are the dimensions of the penguins dataset?
+dim(penguins)
+
+344 by 8
+
+# 5. what are the column names of the penguins dataset?
+
+species, island, bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g, sex, year
+
+# 6. what type of data is `flipper_length_mm` and `Island`?
+class(penguins$flipper_length_mm)
+
+class(penguins$island)
+
+flipper_length_mm is an integer
+
+Island is a factor
+
+# 7. what is the mean flipper length of the penguins?
+mean(penguins$flipper_length_mm, na.rm = TRUE)
+
+200.9152
+
+# 8. what is the standard deviation of flipper length in the penguins?
+sd(penguins$flipper_length_mm, na.rm = TRUE)
+
+14.06171
+
+# 9. what is the median body mass of the penguins?
+median(penguins$body_mass_g, na.rm = TRUE)
+
+4050
+
+# 10. what is the Island of the 100th penguin?
+penguins$island[100]
+
+Dream, Biscoe Dream Torgersen
+
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
